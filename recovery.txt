@@ -1,0 +1,29 @@
+Trigger: {TRIGGER.NAME}
+Trigger status: {TRIGGER.STATUS}
+Trigger severity: {TRIGGER.SEVERITY}
+Trigger duration: {EVENT.AGE} ({EVENT.DATE} {EVENT.TIME} - {EVENT.RECOVERY.DATE} {EVENT.RECOVERY.TIME})
+
+Host: {HOST.NAME1} ({HOST.DNS1}, {HOST.IP1})
+Host description: {HOST.DESCRIPTION}
+Trigger Description: {TRIGGER.DESCRIPTION}
+Item Description: {ITEM.DESCRIPTION1}
+
+Item values:
+Name: {ITEM.NAME1}
+Key: {ITEM.KEY1}
+Value: {ITEM.VALUE1}
+
+Some info about this server:
+Uptime: {{HOST.HOST}:system.uptime.last()}
+
+CPU usage:
+Latest value: {{HOST.HOST}:system.cpu.util[,,avg1].last()}
+MAX for 15 minutes: {{HOST.HOST}:system.cpu.util[,,avg1].max(900)}
+MIN for 15 minutes: {{HOST.HOST}:system.cpu.util[,,avg1].min(900)}
+
+CPU load:
+Latest value: {{HOST.HOST}:system.cpu.load[percpu,avg1].last()}
+MAX for 15 minutes: {{HOST.HOST}:system.cpu.load[percpu,avg1].max(900)}
+MIN for 15 minutes: {{HOST.HOST}:system.cpu.load[percpu,avg1].min(900)}
+
+Original event ID: {EVENT.ID}
