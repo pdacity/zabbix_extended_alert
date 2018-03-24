@@ -11,3 +11,4 @@ services:
     image: postgres:9.4.5
     environment:
       - POSTGRES_USER=myapp
+
