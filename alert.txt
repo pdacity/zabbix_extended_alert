@@ -26,3 +26,4 @@ MAX for 15 minutes: {{HOST.HOST}:system.cpu.load[percpu,avg1].max(900)}
 MIN for 15 minutes: {{HOST.HOST}:system.cpu.load[percpu,avg1].min(900)}
 
 Original event ID: {EVENT.ID}
+
